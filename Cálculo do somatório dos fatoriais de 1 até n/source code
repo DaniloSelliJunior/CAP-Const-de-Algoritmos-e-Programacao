@@ -1,0 +1,23 @@
+/******************************************************************************
+Descrição: Cálculo do somatório dos fatoriais de 1 até n
+Requer: valor de n
+Assegura: apresentação da soma
+
+Danilo Djovano Selli Junior Nº UFSCar 842868
+*******************************************************************************/
+#include <stdio.h>
+
+int main(void){
+    int n = 4;
+    unsigned long long int fatorial = 1;
+    
+    //Produtos sucessivos;
+    for (int i = 1; i <= n; i++)
+        fatorial = fatorial*i+fatorial;
+    
+        
+    
+    printf("A soma dos produtos é igual a: %lld", fatorial);
+   
+    return 0;
+}
